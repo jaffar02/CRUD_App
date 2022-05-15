@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/Theme.Material3.Light"
+    android:backgroundTint="#0000"
+    android:background="#0000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/t125"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Enter Name"
+            android:textColor="@color/teal_700"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/SnameTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/t125"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Name:"
+            android:paddingLeft="19dp"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/storeSearchName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/t125"
+            app:layout_constraintLeft_toRightOf="@id/SnameTag"
+            app:layout_constraintBottom_toBottomOf="@id/SnameTag"
+            android:paddingLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/SubmittBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0000"
+            android:text="OK"
+            app:layout_constraintWidth_percent="0.3"
+            android:layout_marginTop="35dp"
+            android:textSize="20sp"
+            android:textColor="@color/teal_700"
+            app:layout_constraintTop_toBottomOf="@id/storeSearchName"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/storeSearchName"
+            app:layout_constraintRight_toRightOf="parent"
+            android:textAllCaps="false"
+            app:strokeColor="@color/white"
+            app:strokeWidth="2dp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>

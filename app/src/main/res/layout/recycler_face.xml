@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Material3.Light"
+        android:backgroundTint="#0000"
+        android:background="#0000"
+        android:paddingVertical="20dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:id="@+id/nameTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Name:"
+                android:paddingLeft="19dp"
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/storeName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/nameTag1"
+                android:text="Name:"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/positionTag1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nameTag1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Position:"
+                android:paddingLeft="19dp"
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/storePosition1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/storeName1"
+                app:layout_constraintLeft_toRightOf="@id/positionTag1"
+                android:text="Name:"
+                android:paddingLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/black"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
